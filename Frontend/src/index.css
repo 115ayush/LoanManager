@@ -1,0 +1,108 @@
+:root {
+  /* Typography and Font Settings */
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Color and Theme */
+ 
+  color: rgba(255, 255, 255, 0.87);
+  /* Default text color for dark theme */
+
+  /* Default background for dark theme */
+
+  /* Font Rendering and Optimization */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  /* Link color */
+  text-decoration: none;
+  /* Removed 'inherit' for better control */
+  transition: color 0.25s;
+  /* Smooth hover transition */
+}
+
+a:hover {
+  color: #535bf2;
+  /* Hover state for links */
+}
+
+body {
+  margin: 0;
+  
+
+  /* Center vertically */
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: inherit;
+  /* Background color inherited from root */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0;
+  /* Added margin reset for better control */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  
+  color: #fff;
+  /* Ensure text is visible on dark background */
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s;
+  /* Added background transition */
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+  /* Default focus ring color */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    /* Dark text for light theme */
+    background-color: #ffffff;
+    /* Light background for light theme */
+  }
+
+  a {
+    color: #646cff;
+    /* Adjusted to match the link color for light theme */
+  }
+
+  a:hover {
+    color: #747bff;
+    /* Softer hover color for light theme */
+  }
+
+  button {
+    background-color: #f9f9f9;
+    /* Lighter background for light theme */
+    color: #000;
+    /* Darker text for visibility in light mode */
+  }
+
+  button:hover {
+    background-color: #e6e6e6;
+    /* Hover effect for light theme buttons */
+  }
+}

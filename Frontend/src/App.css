@@ -1,0 +1,122 @@
+/* App.css - Redesigned styles for the main application */
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root container styles */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8; /* Light blue background */
+}
+
+/* Main application container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  background-color: white;
+}
+
+/* Flexbox layout for the header and content */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the logo */
+.logo {
+  height: 5em;
+  transition: filter 300ms;
+}
+
+/* Logo hover effect */
+.logo:hover {
+  filter: drop-shadow(0 0 15px rgba(0, 85, 100, 0.8)); /* Blue shadow on hover */
+}
+
+/* Typography styles */
+h1, h2, h3 {
+  font-family: 'Segoe UI', sans-serif; /* Modern font for headings */
+  color: #003366; /* Dark blue for text */
+}
+
+/* Adjust font sizes for headings */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Credential text alignment */
+.credentials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #e0f7fa; /* Light blue background */
+  border-left: 5px solid #005f73; /* Darker blue left border */
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Loading spinner container */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Circular loading indicator */
+.circular-progress {
+  color: #005f73; /* Darker blue color for loading indicator */
+}
+
+/* General button styles */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #008080; /* Teal background */
+  color: white;
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #005f73; /* Darker teal on hover */
+}
+
+/* Link styles */
+a {
+  color: #003366; /* Dark blue color for links */
+  text-decoration: none;
+  transition: color 200ms;
+}
+
+/* Link hover effect */
+a:hover {
+  color: #002147; /* Darker blue on hover */
+}
