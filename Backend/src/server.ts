@@ -24,6 +24,7 @@ const origin = mode === 'production'
 app.use(bodyParser.json());
 
 // Set up CORS middleware
+console.log(origin,"origin")
 app.use(cors({
   origin, 
   credentials: true,
