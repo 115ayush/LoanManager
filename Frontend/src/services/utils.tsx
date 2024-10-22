@@ -64,7 +64,7 @@ export const submitLoanApplication = async (loanData: LoanData): Promise<LoanApp
 // Function to get all loans
 export const getAllLoans = async (userId: string): Promise<GetAllLoansResponse> => {
   try {
-    const response = await axiosInstance.get(`/getAllLoans/${userId}`);
+    const response = await axiosInstance.get(`/loans/user/${userId}`);
     return response.data as GetAllLoansResponse; // Ensure the response type matches
   } catch (error) {
     console.error('Error fetching loans:', error);

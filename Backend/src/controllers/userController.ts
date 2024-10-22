@@ -69,6 +69,7 @@ export const logoutUser = (req: Request, res: Response, next: NextFunction): voi
 
 // Fetch authenticated user information
 export const fetchAuth = (req: Request, res: Response): void => {
+  console.log("hi");
   if (req.isAuthenticated()) {
     res.json(req.user); // Return user information if authenticated
   } else {
